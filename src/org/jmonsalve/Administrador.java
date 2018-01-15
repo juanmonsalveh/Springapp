@@ -6,7 +6,7 @@ public class Administrador {
 
 	private int idAdmin;
 	private String name;
-	//@Autowired
+	@Autowired
 	private Direccion direccion;
 	
 
@@ -54,7 +54,8 @@ public class Administrador {
 	public Direccion getDireccion() {
 		return direccion;
 	}
-
+	
+	//@Autowired//, bien puede ser en el setter o en el mismo parametro
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}

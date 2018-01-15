@@ -2,7 +2,7 @@ package org.jmonsalve;
 
 import org.springframework.stereotype.Component;
 
-//@Component
+@Component
 public class Direccion {
 	
 	private String calle;
