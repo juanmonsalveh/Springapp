@@ -1,5 +1,7 @@
 package org.jmonsalve;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -20,13 +22,17 @@ public class Direccion {
 	public String getCalle() {
 		return calle;
 	}
-	public void setCalle(String calle) {
+
+	@Autowired
+	public void setCalle(@Value("falsa")String calle) {
 		this.calle = calle;
 	}
 	public String getCarrera() {
 		return carrera;
 	}
-	public void setCarrera(String carrera) {
+	
+	@Autowired
+	public void setCarrera(@Value("123")String carrera) {
 		this.carrera = carrera;
 	}
 	
